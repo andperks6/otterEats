@@ -41,6 +41,7 @@ export interface GetPublishMenuQueryResponse {
     };
 }
 export const GET_PUBLIC_MENU = gql`
+    # noinspection GraphQLUnresolvedReference
     query GetPublicMenu($slug: String!) {
         pageBuilder {
             getPublicMenu(slug: $slug) {
